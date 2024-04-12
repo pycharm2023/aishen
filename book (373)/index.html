@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html>
+
+<!-- Mirrored from ailingmusheng.ren/2021/book (373)/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Apr 2024 12:17:09 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+<head>
+    <title>导航|企业网站管理系统|微网站建设|手机网站建设|中英文网站建设-爱灵慕圣</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="renderer" content="webkit">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="author" content="爱灵慕圣">
+<meta name="keywords" content="企业网站管理系统,微网站建设,手机网站建设,中英文网站建设">
+<meta name="description" content="本系统集手机站、微信站、电脑站三站合一，各站数据同步、只需一个空间,维护更方便！订购热线：010-88888888">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=0,minimal-ui">
+<meta name="format-detection" content="telephone=no">
+<meta name="HomeLanguageMark" content="cn">
+<link href="http://ailingmusheng.ren/Upload/1627483746.ico" type="image/x-icon" rel="icon">
+<link href="http://ailingmusheng.ren/Upload/1627483746.ico" type="image/x-icon" rel="shortcut icon">
+<link href="../../../res.youdiancms.com/common.css" rel="stylesheet" type="text/css" />
+<link href="../../App/Tpl/Home/Default/Public/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="../../App/Tpl/Home/Default/Public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../../../res.youdiancms.com/common.js"></script>
+<!-- 全局主题样式控制 -->
+<style type="text/css">
+	/*=====主题色 开始=====*/
+	body{ background-color: #f5f5f5; }
+	.btn{ background-color: #0066CC; }
+	/*父级触发子级*/
+	.ThemeColorParent:hover .ThemeColorChild{ color: #0066CC !important; }
+	.ThemeColorParent:hover .ThemeColorBgChild,.ThemeColorParent:hover .ThemeColorBgChildAfter:after{ background-color: #0066CC !important; color: #FFF !important; }
+	.ThemeColorParent:hover .ThemeColorBgColorChild { color: #FFF !important; }
+	/*自身触发*/
+	.ThemeColor,.ThemeColorHover:hover{ color: #0066CC !important; }
+	.ThemeColorBg,.ThemeColorBgHover:hover{ background-color: #0066CC !important; color: #FFF !important; }
+	.ThemeBeforeColorBg:before,.ThemeAfterColorBg:after { background-color: #0066CC !important; }
+	.ThemeColorBorder,.ThemeColorBorderHover:hover,.ThemeColorBorderAfter:after{ border-color: #0066CC !important; }
+	.ThemeColorBorderBottom,.ThemeColorBorderBottomHover:hover{ border-bottom-color: #0066CC; }
+	.ThemeColorBtnHover:hover { border-color:#0066CC !important; color:#0066CC !important; }
+	/*=====主题色 结束=====*/
+
+	/*=====其他不可内联主题及变量 开始=====*/
+	/*语言切换*/
+	#language a{ background-color: #0066CC; }
+	/*导航*/
+	.logo_main_shade2{ background-color: ; opacity: ; }
+	#logo_main.istop,#logo_main.navigation-style1,#logo_main.navigation-style3{ background-color: ; }
+	#navigation ul.navigationlist>li>a{ padding: 0 px; }
+	#navigation ul.navigationlist li a{ color: ; font-size: px; }
+	/*幻灯片*/
+	.bannerlist li .bannertext{ top: %; text-align: ; }
+	.bannerlist li .bannertext .BannerName{ color: ; font-size: px; }
+	.bannerlist li .bannertext .BannerDescription{ color: ; font-size: px; }
+	/*侧边栏*/
+	.sidebar_title h2 { border-color: #0066CC; }
+	.sidelist li a:hover .InfoTitle{ color: #0066CC; }
+	/*翻页*/
+	.page .current{ background-color: #0066CC; border-color: #0066CC; }
+	/*联系我们图标*/
+	#Map .ContactInfo i{ color: #0066CC; }
+</style>
+
+<script>
+	$(document).ready(function(e) {
+		pageInit();
+		function pageInit(){
+			if( $("#member").length > 0 ){
+				if( "0" == 1 ){
+					$.get("/index.php/public/getJson/l/cn", null, function(data){ UpdateLoginStatus(data['MemberID'], data['MemberName'], data['EnableMember']); },"json");
+				}else{
+					UpdateLoginStatus("", "", "1");
+				}
+			}
+		}
+		function UpdateLoginStatus(id, name, flag){
+			if(flag==0){
+				$("#member").remove();
+				return;
+			}
+			var html = "";
+			if( id ){
+				html += '<span class="MemberName">'+name+'&nbsp;</span>';
+				html += '<a href="/index.php/member/public/index" target="_blank">会员中心&nbsp;&nbsp;&nbsp;</a>';
+				html += '<a href="/index.php/member/public/logout" target="_self" style="color: red;">退出登录</a>';
+			}else{
+				html += '<a href="/index.php/public/login/l/cn" target="_self">登录&nbsp;&nbsp;&nbsp;</a>';
+				html += '<a href="/index.php/public/reg/l/cn" target="_self">注册&nbsp;</a>';
+			}
+			$("#member").html( html );
+		}
+	});
+</script>
+
+</head>
+<body  class="body_picture">
+	<!-- wap Logo 开始-->
+<div id="wap_logo_main">
+  <div id="wap_logo">
+     <div id="menu"></div>
+       <div class="WebLogo">
+       		<a class="WebLogo" href="http://ailingmusheng.ren/index.php"><img src="http://ailingmusheng.ren/Upload/1627483746.ico" /></a>
+       		       		<a class="shownavbtn" href="javascript:;"></a>
+       	</div>  </div>
+</div>
+<!--wap Logo 结束-->
+
+<!--wap 导航 开始-->
+<div id="wap_navigation">
+    <i id="wap_navigationshade"></i>
+    <ul class="wap_navigationlist">
+        <div class="seachwrap">
+            <form name="frmInfoSearch" method="post" action="http://ailingmusheng.ren/index.php/channel/search/l/cn">
+                <input class="Keywords" name="Keywords" value="" type="text" placeholder="请输入关键词"/>
+                <input class="btnSearch" name="btnSearch" class="btn" type="submit" value=""  />
+            <input type="hidden" name="__hash__" value="98645489cbd15622c6187fa37973777a_b3e4cf04e161e8f1b5be35aa0068aab2" /></form>
+        </div>
+        <li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php" class='ThemeColor minBorderBottom'>导航</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/sj.html" class=' minBorderBottom'>圣经</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.html" class=' minBorderBottom'>书报</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/sg.html" class=' minBorderBottom'>诗歌</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/th.html" class=' minBorderBottom'>特会</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/zl.html" class=' minBorderBottom'>真理</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/ls.html" class=' minBorderBottom'>历史</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/product.html" class=' minBorderBottom'>分享</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/download.html" class=' minBorderBottom'>下载</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/guestbook.html" class=' minBorderBottom'>留言</a>
+	                          </li><li class="depth0">
+          		<a href="http://ailingmusheng.ren/index.php/wzgg.html" class=' minBorderBottom'>公告</a>
+	                          </li>    </ul>
+</div>
+<!--wap 导航 结束-->
+
+<!--区块5030 开始-->
+<div id="n5030" class="component floor_head0_main">
+	<style type="text/css">
+		#n5030{
+			background-color:#FFFFFF;		}
+		#n5030 .floor_head0_shade2{
+			background-color:#FFFFFF; opacity: 0.3; height: 65px;
+			padding: 10px 0;
+		}
+		#n5030 .floor_head0.navigation-style1{
+			background-color:#FFFFFF;		}
+		#n5030.notTop .floor_head0.navigation-style2{
+			background-color:#FFFFFF;		}
+		#n5030 .floor_head0{
+			padding: 10px 0;
+		}
+		#n5030 .logo img{
+			height: 65px;
+		}
+		#n5030 .navigation{
+			text-align: right;
+		}
+		#n5030 .navigation ul.navigationlist li{
+			line-height: 65px;
+		}
+		#n5030 .navigation ul.navigationlist>li>a{
+			font-size:16px;color:#333333;font-weight: normal;font-style: normal;text-align:;			padding-left: 16px; padding-right: 16px;
+		}
+		#n5030 .subnavigationlist{
+					}
+		#n5030 .subnavigationlist a{
+			font-family:Microsoft YaHei;color:#333333;font-weight: normal;font-style: normal;text-align:;		}
+		#n5030 .user{
+			line-height: 65px;
+		}
+		#n5030 #member a.login_btn{
+			font-size:14px;color:#666666;line-height:2.6em;font-weight: normal;font-style: normal;text-align:center;			width:60px;border-radius:4px;border:1px solid #DDDDDD;			background: ;
+		}
+		#n5030 #member a.login_btn:hover{
+			background: #333333;
+			color: #FFF;		}
+		#n5030 #member a.reg_btn{
+			font-size:14px;color:#FFFFFF;line-height:2.6em;font-weight: normal;font-style: normal;text-align:center;			width:60px;border-radius:4px;border:1px solid #00A1E7;			background: #00A1E7;
+			margin-left: 15px;
+		}
+		#n5030 #member a.reg_btn:hover{
+			background: ;
+					}
+		#n5030 .navigation ul.navigationlist>li>a.current,
+		#n5030 .navigation ul.navigationlist>li:hover>a{
+			color:#FF0066;font-weight: normal;font-style: normal;text-align:;;
+			;
+		}
+		#n5030 .navigation ul.navigationlist>li.separator span{
+			color: ;
+		}
+		#n5030 .subnavigationlist a:hover{
+			background-image: linear-gradient(45deg, #FF6699, #FF0066);			color:#FFFFFF;font-weight: normal;font-style: normal;text-align:;		}
+		#n5030 .nav_active{
+			background: #FF0066;
+		}
+	</style>
+	<i class="floor_head0_shade1"></i>
+	<div class="floor_head0 navigation-style1" yd-add="1" yd-delete="1" yd-order="1" yd-group="5030" yd-content="channel">
+	    <div class="head0 full-width0">
+			<div class="logo" yd-content="basic">
+				<a href="http://ailingmusheng.ren/index.php" target="_self">
+					<img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/1627483375.gif" title="爱灵慕圣" alt="爱灵慕圣" />
+				 </a>
+			</div>
+			<div class="user">
+											</div>
+			<div class="navigation">
+				<ul class="navigationlist">
+					<i class="nav_active"></i>
+											<li class="list-item" data-index="1">
+							<a href="http://ailingmusheng.ren/index.php" target="_self" class="current">导航</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="2">
+							<a href="http://ailingmusheng.ren/index.php/sj.html" target="_self" class="">圣经</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="3">
+							<a href="http://ailingmusheng.ren/index.html" target="_self" class="">书报</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="4">
+							<a href="http://ailingmusheng.ren/index.php/sg.html" target="_self" class="">诗歌</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="5">
+							<a href="http://ailingmusheng.ren/index.php/th.html" target="_self" class="">特会</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="6">
+							<a href="http://ailingmusheng.ren/index.php/zl.html" target="_self" class="">真理</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="7">
+							<a href="http://ailingmusheng.ren/index.php/ls.html" target="_self" class="">历史</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="8">
+							<a href="http://ailingmusheng.ren/index.php/product.html" target="_self" class="">分享</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="9">
+							<a href="http://ailingmusheng.ren/index.php/download.html" target="_self" class="">下载</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="10">
+							<a href="http://ailingmusheng.ren/index.php/guestbook.html" target="_self" class="">留言</a>
+													</li><li class="separator"><span></span></li>						<li class="list-item" data-index="11">
+							<a href="http://ailingmusheng.ren/index.php/wzgg.html" target="_self" class="">公告</a>
+													</li>				</ul>
+			</div>
+	    </div>
+	</div>
+	<script>
+		$(function(){
+			var width = 0;
+			var left = 0;
+			//用户
+			pageInit();
+			function pageInit(){
+				if( $("#n5030 #member").length > 0 ){
+					if( "0" == 1 ){
+						$.get("/index.php/public/getJson/l/cn", null, function(data){ UpdateLoginStatus(data['MemberID'], data['MemberName'], data['EnableMember']); },"json");
+					}else{
+						UpdateLoginStatus("", "", "1");
+					}
+				}
+			}
+			function UpdateLoginStatus(id, name, flag){
+				if(flag==0){
+					$("#n5030 #member").remove();
+					return;
+				}
+				var html = "";
+				if( id ){
+					html += '<a href="/index.php/member/public/index" target="_blank" class="MemberName">'+name+'</a>';
+					html += '<a href="/index.php/member/public/logout" target="_self" style="color: red;">退出登录</a>';
+				}else{
+					html += '<a href="/index.php/public/login/l/cn" class="login_btn" target="_self">登录</a>';
+					html += '<a href="/index.php/public/reg/l/cn" class="reg_btn" target="_self">注册</a>';
+				}
+				$("#n5030 #member").html( html );
+			}
+
+			// pc导航栏js
+			$('#n5030 ul.navigationlist li').mousemove(function(){
+				if($(this).find('ul').is(":animated")) return;
+				$(this).find('ul').slideDown(280);
+				if($(this).find('.style2').length > 0){
+					var length = $('#n5030 ul.navigationlist>li.list-item').length;
+					console.log(length - $(this).data('index'), length);
+					if(length - $(this).data('index') <= 3){
+						var child = $(this).find('.subnavigationlist');
+						child.css({
+							marginLeft: - (child.width() - $(this).width()) + 'px',
+						})
+					}
+				}
+			});
+			$('#n5030 ul.navigationlist li').mouseleave(function(){
+				$(this).find('ul').slideUp(280);
+			});
+			
+			$('#n5030 .nav_active').css({
+				width: $('#n5030 .navigationlist li a.current').parent().width(),
+				left: $('#n5030 .navigationlist li a.current').parent()[0] && $('#n5030 .navigationlist li a.current').parent()[0].offsetLeft,
+			});
+			$('#n5030 .navigationlist li').mousemove(function(){
+				$('#n5030 .nav_active').css({
+					width: $(this).width(),
+					left: $(this)[0].offsetLeft
+				});
+			})
+			$('#n5030 .navigationlist li').mouseleave(function(){
+				$('#n5030 .nav_active').css({
+					width: $('#n5030 .navigationlist li a.current').parent().width(),
+					left: $('#n5030 .navigationlist li a.current').parent()[0] && $('#n5030 .navigationlist li a.current').parent()[0].offsetLeft,
+				});
+			})
+
+			$('#n5030 .subnavigationlist').mousemove(function(){
+				$('#n5030 .nav_active').css('left', $(this).parent()[0].offsetLeft);
+			})
+
+			if($('#n5030').find('.floor_head0').hasClass('navigation-style2')){
+				$('#n5030').height('0')
+			}else{
+				$('#n5030').height($('#n5030 .floor_head0')[0].clientHeight)
+			}
+			// 头部固定
+			function logoMainChange(){
+				if($('#n5030').offset().top < $(window).scrollTop()){
+					$('#n5030').addClass('notTop');
+				}else{
+					$('#n5030').removeClass('notTop');
+				}
+			}
+			// 滚动事件
+			$(window).scroll(function(){
+				logoMainChange();
+			});
+		})
+	</script>
+</div>
+<!--区块5030 结束-->
+
+<div class="banner_img">
+			<img src="#" />	</div>        <!--区块23 开始-->
+    <div id="n23" class="component product_main" yd-add="1" yd-order="1" yd-group="23" yd-content="info,1">
+        <style type="text/css">
+            #n23{
+                 padding:20px 0;
+            }
+            #n23 #right{
+                background-color:#FFFFFF;            }
+            #n23 #right .InfoTitle{
+                font-size:16px;line-height:2.2em;font-weight: normal;font-style: normal;text-align:center;            }
+            #n23 #right .InfoSContent{
+                color:#999999;font-weight: normal;font-style: normal;text-align:;            }
+            #n23 #right .InfoPrice{
+                font-size:18px;font-weight: bold;font-style: normal;text-align:;            }
+            #n23 #right li{
+                animation-duration: 2.00s; animation-fill-mode: both;
+            }
+
+            #n23 #left{
+                background-color:#FFFFFF;            }
+            #n23 .sidebar_title h2{
+                font-size:20px;color:#333333;font-weight: normal;font-style: normal;text-align:;            }
+            #n23 .sidelist .InfoTitle{
+                color:#333333;font-weight: normal;font-style: normal;text-align:center;            }
+            #n23 .sidelist .InfoPrice{
+                display:none;color:#FF0000;font-weight: normal;font-style: normal;text-align:;            }
+        </style>
+        <div class="product full-width0">
+            <div id="left" class="float2">
+                                                                                <div class="seachwrap">
+        <form class="frmInfoSearch" action="#" method="post">
+            <input class="Keywords" type="text" name="keywords" value="" placeholder="请输入您感兴趣的关键词" />
+            <input class="btnSearch btn" type="submit" value="">
+        <input type="hidden" name="__hash__" value="98645489cbd15622c6187fa37973777a_b3e4cf04e161e8f1b5be35aa0068aab2" /></form>
+    </div><div class="sidebar_title"><h2>热门内容导引</h2></div>  
+    <div class="sidebar_body">
+        <ul class="sidelist grid-sidelist medium-round-corner">
+            <!--循环开始-->
+            暂无信息            <!--循环结束-->
+       </ul>
+    </div>
+    <div class="sidebar_bottom"></div>
+
+    <div class="sidebar_title"><h2>推荐内容导引</h2></div>  
+    <div class="sidebar_body">  
+        <ul class="sidelist grid-sidelist medium-round-corner">
+            <!--推荐循环开始-->
+            暂无信息            <!--推荐循环结束-->
+       </ul>
+    </div>
+    <div class="sidebar_bottom"></div><!-- 单页模型 -->
+<!-- 反馈 -->
+<!-- 在线留言 -->
+<!-- 人才招聘 -->
+                </div>            <div id="right">
+            	<div class="right_title">
+            		<!--当前位置 开始-->
+<div id="location"><b>当前位置：</b>
+<a href="http://ailingmusheng.ren/index.php" target="_self">导航</a>
+    </div>
+<!--当前位置 结束-->
+                    <div class="seachwrap">
+	    <form class="frmInfoSearch" action="#" method="post">
+		    <input class="Keywords" type="text" name="keywords" value="" placeholder="请输入您感兴趣的关键词" />
+		    <input class="btnSearch btn" type="submit" value="">
+		<input type="hidden" name="__hash__" value="98645489cbd15622c6187fa37973777a_b3e4cf04e161e8f1b5be35aa0068aab2" /></form>
+	</div>                </div>
+    			<div class="right_body">
+                    <ul class="n1 swiper-slide product0 grid-product0 list-style2">
+                        <li class="n0 column3" yd-animation="animate__animated animate__fadeInUp">
+                                <a href="http://ailingmusheng.ren/index.php/index/344.html" target="_blank" class="medium-round-corner" yd-content="_info,344">
+                                    <div class="InfoPicture medium-round-corner"><img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/1627483350.png" title="网站维护公告" alt="网站维护公告"/></div>
+                                    <div class="InfoWrap">
+                                        <div class="InfoTitle">网站维护公告</div>                                                                            </div>
+                                                                    </a>
+                            </li>                    </ul>
+    				<div class="page_main"><div class="page"></div></div>
+    		   </div>
+               <div class="right_bottom"></div>
+    		</div>
+    		<div class="clear"></div>
+        </div>
+    </div>
+    <!--区块23 结束-->
+	<!--区块5031 开始-->
+<div id="n5031" class="component floor_foot2_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5031">
+	<style type="text/css">
+		#n5031{ 
+			background-image: linear-gradient(0deg, #000000, #4FFF87);		}
+		#n5031 .component_title,#n5031 .component_body,#n5031 .component_bottom{
+			padding-top:27px;
+		}
+		#n5031 .component_body{
+			padding-bottom:27px;
+		}
+		#n5031 .component_body:before,#n5031 .component_body:after{
+			background-color:#3E7207;
+		}
+		#n5031 .floor_foot2{
+			animation-duration: 3.00s;
+			animation-fill-mode: both;
+		}
+		#n5031 .foot2_title { 
+			font-size:18px;line-height:0.4em;font-weight: bold;font-style: normal;text-align:;		}
+		#n5031 .foot2_WeChat .LogoText{ 
+			font-size:14px;line-height:1.8em;font-weight: normal;font-style: normal;text-align:;		}
+		#n5031 .foot2_contact_wrap p{ 
+			font-size:14px;line-height:2em;font-weight: normal;font-style: normal;text-align:;		}
+		#n5031 .foot2_contact_wrap .Telephone{
+			font-size:28px;color:#FFFFFF;font-weight: normal;font-style: normal;text-align:;		}
+		#n5031 .foot2_navigation .channel1{ 
+			font-size:14px;font-weight: normal;font-style: normal;text-align:;		}
+		#n5031 .foot2_Content img {
+			width:200px;
+		}
+		#n5031 .foot2_Content .foot2_right_text {
+			font-size:12px;line-height:1.8em;font-weight: normal;font-style: normal;text-align:;		}
+		@media screen and (max-width: 768px) {
+			#n5031 .component_bottom {
+				padding-bottom:27px;
+			}
+		}
+	</style>
+	<div class="floor_foot2 full-width0" yd-animation="12">
+		<div class="component_title" yd-group="5031" yd-tab="左侧栏设置">
+			<div class="foot2_title">关注公众号</div>			<div class="foot2_WeChat">
+				<img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/1627487487.jpg" /><span class="LogoText">扫一扫，关注我们最新消息</span>			</div>
+			<div yd-slot="5031Afoot"></div>
+		</div>
+		<div class="component_body" yd-group="5031" yd-tab="中间栏设置">
+			<div class="foot2_title">联系我们</div>			<div class="foot2_contact_wrap" yd-content="contact">
+				<div class="Telephone"></div>
+																							</div>
+			<div yd-slot="5031Bfoot"><!--区块5032 开始-->
+<div id="n5032" class="component floor_child5_main" yd-group="5032" yd-delete="1" yd-animation="animate__animated animate__fadeInLeft">
+	<style type="text/css">
+		#n5032{
+			animation-duration: 1.00s;
+			animation-fill-mode: both;
+		}
+		#n5032 .floor_child5{
+			padding: 10px 10px 10px 10px;
+		}
+		#n5032 .Picture{
+			width: 22px;
+			height: 22px;
+			padding: 8px;
+			border:0px solid #FFFFFF;border-radius:89px;box-shadow: 0 3px 6px rgba(0,0,0,.1);		}
+		#n5032 .Picture:hover{
+			background: #F0F0F0 !important;
+		}
+		#n5032 .SubPicture img{
+			width: 120px;
+		}
+		#n5032 ul{
+			text-align: center;
+		}
+		#n5032 li{
+			margin: 0 18px;
+		}
+		#n5032 li .Title{
+			font-size:16px;line-height:2.4em;font-weight: normal;font-style: normal;text-align:;			yd-previewable-class: align align0;
+		}
+	</style>
+	<ul class="floor_child5">
+		<li yd-animation="animate__animated animate__fadeInLeft">
+				<a href="#" target="_blank">
+					<img class="Picture" src="../../../res.youdiancms.com/icon_wx.png" alt="微信" style="background-color: #FFFFFF" />
+					<div class="Title align0">微信</div>
+				</a>
+				<div class="SubPicture"><img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/162799007994.jpg" /></div>			</li><li yd-animation="animate__animated animate__fadeInLeft">
+				<a href="#" target="_blank">
+					<img class="Picture" src="../../../res.youdiancms.com/icon_qq.png" alt="QQ群" style="background-color: #FFFFFF" />
+					<div class="Title align0">QQ群</div>
+				</a>
+				<div class="SubPicture"><img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/1627993568.jpg" /></div>			</li>	</ul>
+</div>
+<!--区块5032 结束--></div>
+		</div>
+		<div class="component_bottom" yd-group="5031" yd-tab="右侧栏设置">
+			<div class="foot2_title">底部导航</div>			<ul class="foot2_navigation" yd-content="channel">
+				<li>
+						<a class="channel1 ThemeColorHover" href="http://ailingmusheng.ren/index.html" target="_self" >书报</a>
+					</li><li>
+						<a class="channel1 ThemeColorHover" href="http://ailingmusheng.ren/index.php/product.html" target="_self" >分享</a>
+					</li><li>
+						<a class="channel1 ThemeColorHover" href="http://ailingmusheng.ren/index.php/download.html" target="_self" >下载</a>
+					</li><li>
+						<a class="channel1 ThemeColorHover" href="http://ailingmusheng.ren/index.php/guestbook.html" target="_self" >留言</a>
+					</li><li>
+						<a class="channel1 ThemeColorHover" href="http://ailingmusheng.ren/index.php/wzgg.html" target="_self" >公告</a>
+					</li>			</ul>
+			<div class="foot2_Content">
+				<img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/1627487804.jpg"/><div class="foot2_right_text">愿恩典与平安，从那今是昔是以后永是的，从祂宝座前的七灵， 并从那忠信的见证人、死人中的首生者、为地上君王元首的耶稣基督，归与你们。祂爱我们，用自己的血，把我们从我们的罪中释放了；又使我们成为国度，作祂神与父的祭司；愿荣耀权能归与祂，直到永永远远。阿们。 （启示录1：4-6）</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--区块5031 结束--><!--区块5015 开始-->
+<div id="n5015" class="component floor_support1_main" yd-add="1" yd-delete="1" yd-order="1" yd-group="5015">
+	<style type="text/css">
+			#n5015{ 
+				background-color:#000000;			}
+			#n5015 .component_body {
+				padding:10px 0;border-top:0px solid #FF0000;
+			}
+			#n5015 .component_body .footer_text{ 
+				text-align:center;
+				font-size:16px;color:#F0F0F0;line-height:1.2em;font-weight: bold;font-style: normal;text-align:center;			}
+			#n5015 .WebInfo,#n5015 .WebInfo a{ 
+				text-align:center;
+				font-size:14px;color:#999999;line-height:1.4em;font-weight: normal;font-style: normal;text-align:;			}
+			#n5015 .support1_text{
+				font-size:16px;color:#F0F0F0;line-height:1.2em;font-weight: bold;font-style: normal;text-align:center;				center			}
+		</style>
+		<div class="floor_support1 full-width1">
+			<div class="component_title"></div>
+			<div class="component_body">
+				<div class="footer_text">爱 灵 慕 圣</div>				<div class="WebInfo support1_center" yd-content="basic">
+					<span class="support1_left"><a  href="http://ailingmusheng.ren/" target="_self"></a>&nbsp;版权所有&nbsp;<a href="https://beian.miit.gov.cn/" target="_blank"><a href="https://beian.miit.gov.cn/" rel="nofollow" target="_blank"></a></a>&nbsp;</span>
+			        <span class="support1_right">技术支持：<a href="http://www.youdiancms.com/" target="_blank">友点软件</a></span>				</div>
+			</div>
+			<div class="component_bottom"></div>
+		</div></div>
+<!--区块5015 结束-->
+<div class="tool_back"></div>
+	<div id="tool" yd-group="2">
+		<ul class="toollist" style="background-color: #66CCFF;">
+            <li><a  href="http://ailingmusheng.ren/index.php" ><img src="http://ailingmusheng.ren/Upload/1627483746.ico"><p>首页</p></a></li>            <li><a  href="http://ailingmusheng.ren/365/index.html" ><img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/sjhhb.png"><p>圣经</p></a></li>            <li><a  href="http://ailingmusheng.ren/index.php/sg.html" ><img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/20210802210653TarR.png"><p>诗歌</p></a></li>			<li><a  href="http://ailingmusheng.ren/index.php/th.html" ><img src="../../../ailingmusheng-x-ren.img.addlink.cn/Upload/20210802210650yLeR.png"><p>特会</p></a></li>		</ul>
+	</div>
+<style>
+/*----------------------通用样式----------------------*/ 
+
+/*----------------------大屏幕 大桌面显示器 (≥1200px)----------------------*/
+@media screen and (min-width: 1200px) {
+
+}
+
+/*----------------------小屏幕 平板 (≥700px并且≤1199px)----------------------*/
+@media screen and (min-width: 700px) and (max-width: 1199px) {
+
+}
+
+/*----------------------超小屏幕 手机 (≤699px)----------------------*/
+@media screen and (max-width: 699px) {
+
+}
+</style>
+
+<!----------------------自定义脚本代码---------------------->
+<script  type="text/javascript">
+$(document).ready(function(){
+
+});
+</script>
+		<!--gotop start-->
+		<script type='text/javascript' src='../../Public/jquery/common.js'></script>
+		<script>
+			scrolltotop.controlattrs={offsetx:20, offsety:150};
+			scrolltotop.controlHTML = '<img src="../../../ailingmusheng-x-ren.img.addlink.cn/Public/Images/gotop/4.gif" />';
+			scrolltotop.anchorkeyword = '#gotop';
+			scrolltotop.title = '回顶部';
+			scrolltotop.init();
+		</script>
+		<!--gotop end-->
+		
+
+		<!--在线客服start-->
+		<link rel='stylesheet' type='text/css' href='../../Public/online/style/common.css'/>
+            <script type='text/javascript' src='../../Public/online/jquery.online.js'></script>
+		<style>
+			.SonlineBox .openTrigger, .SonlineBox .titleBox{ background-color:#0066CC; }
+			.SonlineBox .contentBox{ border:2px solid #0066CC;  }
+		</style>
+		<script type='text/javascript'>
+		$(window).load(function(){
+			$().Sonline({
+				Position:'right', Top:350, Width:55, Style:2, Effect:true, 
+				DefaultsOpen:true, Tel:'1', Title:'在线客服',
+				FooterText:"<img alt=\'微信扫一扫 关注我们\' src=\'/Upload/1627487487.jpg\' style=\'width: 160px; height: 160px; margin-top: 8px;\' title=\'微信扫一扫 关注微信公众号\' /><br /><strong>扫一扫，关注微信公众号</strong>", Website:'',
+				IconColor: '#FFFFFF', ThemeColor: '#0066CC',
+				Qqlist:'/Upload/162799007994.jpg|微信|9'
+			});
+		});
+		</script>
+		<!--在线客服end-->
+		
+
+
+</body>
+
+<!-- Mirrored from ailingmusheng.ren/2021/book (373)/index.htm by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 12 Apr 2024 12:17:09 GMT -->
+</html>
